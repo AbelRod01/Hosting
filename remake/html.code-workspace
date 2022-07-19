@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "..\\SoyDalto\\html"
+		},
+		{
+			"path": "..\\SoyDalto\\css"
+		},
+		{
+			"path": "..\\prueba"
+		},
+		{
+			"path": "..\\Prueba-pre-js"
+		},
+		{
+			"path": "..\\SoyDalto\\js"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Game"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\xampp\\htdocs\\ejercicios"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "remake"
+	}
+}

@@ -1,0 +1,503 @@
+*{  
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Old Standard TT','Newsreader','Times New Roman', Times, serif;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-image:url(/images/backgroundNewspaper.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    color: rgb(44, 34, 4); 
+}
+.container{
+    width: 80vw;
+
+    margin: auto;
+}
+/* header */
+.header{
+    width:100vw;
+    margin: auto;
+}
+.headerContainer{
+    text-align: center;
+    margin-top: 2vw;
+    height: 10vw;
+    border-top: black solid  .2vw ;
+    border-bottom: black solid  .2vw ;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, black 40%,black 60%, rgba(0, 0, 0, 0) 100%)1;
+}
+.headerTitle{
+    display: block;
+    color: rgb(0, 0, 0);
+    line-height: 7vw;
+    letter-spacing: -.6vw;
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    transform: scaleY(2);
+    transform-origin: 0 0;
+    position: relative;
+    bottom: 1vw; 
+    -webkit-mask-image: url(/images/terreno2.png);
+    /* animation:title 1s infinite linear; */
+
+}
+    /* @keyframes title{
+        from{
+            bottom:1vw;
+            left:.1vw;
+        }
+        to{
+            bottom:.9vw;
+            left:0vw;
+        }
+
+    } */
+.subHeader{
+    display:block;
+    text-align: center;
+    font-size: 1vw;
+    margin-top: 0.4vw;
+    border-bottom: 1px solid black;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, black 40%,black 60%, rgba(0, 0, 0, 0) 100%)1;
+}
+/* /header */
+.mainContainer{
+    width:100%;
+    height: 100%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.firstSection{
+    display: flex;
+    width: 100%;
+    height:30vw;
+}
+
+.verticalTextContainer{ 
+    width: 20%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px 1px rgba(54, 44, 14, 0.500);
+}
+
+.verticalText{
+    display: inline-block;
+    transform: rotate(-90deg) scale(.8,1.4);
+    transform-origin: 20vw 14vw;
+    font-size: 6vw;
+    font-weight: 900;
+    letter-spacing: -.3vw;
+    text-transform: uppercase;
+    -webkit-mask-image: url(/images/terreno3.png);
+    
+}
+.verticalSubText{
+    display: inline-block;
+    transform: rotate(-90deg);
+    width: 28vw;
+    text-align: justify;
+    transform-origin: 15vw 7vw;
+    font-size: 1.2vw;
+    font-weight: 300;
+    line-height: 1.5vw;
+    letter-spacing: -.1vw;
+
+}
+
+.articleContainer{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 80%;
+    height: 100%;
+}
+.articleContainerSection1{
+    width: 50%;
+    height: 100%;
+    margin: 0 2vw; 
+}
+.articleSetcion1title{
+    -webkit-mask-image: url(/images/terreno3.png);
+    display: block;
+    height: 35%;
+    font-weight: 900;
+    font-size: 4.6vw;
+    line-height: 5vw;
+    letter-spacing: -.6vw;
+    text-transform: uppercase;
+    text-align:justify;
+
+    
+}
+.articleSection1Parragraph{ 
+
+    display: block;
+    text-align:justify;
+    letter-spacing: -.1vw;
+    line-height: 1.5vw;
+    font-size: 1.5vw;
+}
+.articleContainerSection2{
+    display: flex;
+    justify-content:space-between;
+    width: 45%;
+}
+
+.articleSection2Parragraph1 {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    letter-spacing: -.13vw;
+    line-height: 1.5vw;
+    font-size: 1.5vw;
+    text-align:justify;
+    padding-right: 1vw;
+}
+.articleSection2Parragraph1::first-letter{
+    float: left;
+    font-size:7vw;
+    line-height: 6.5vw;
+    padding: .5vw .5vw 0vw 0vw;
+    border-radius: .1rem;
+    margin: 0 .5vw -1vw 0;
+}
+.articleSection2Parragraph2{
+    display: inline-block;
+    width: 50%;
+    letter-spacing: -.1vw;
+    line-height: 1.5vw;
+    font-size: 1.5vw;
+    text-align:justify;
+}
+.passBar{
+    overflow: hidden;
+    position: relative;
+    width:80vw;
+    height: 4vw;
+    margin:auto;
+    margin-top: 1.5vw; 
+    box-shadow: black;
+
+}
+
+.passBarTextContainer{
+    width:160vw;
+    height: 5vw;
+    position: relative;
+    left:0;
+    top:0;
+    animation:textScroll 8s infinite linear;
+  
+    
+}
+.passBarText{
+    list-style: none;
+    float: left;
+    text-transform: uppercase;
+    line-height: 4.5vw;
+    letter-spacing: -.1vw;
+    font-size: 3vw;
+    color: rgb(44, 34, 4); 
+    -webkit-mask-image: url(/images/terreno2.png);
+    
+}
+@keyframes textScroll{
+     from{
+         left:00vw;
+     }
+     to{
+         left: -79.18vw;
+     }
+ }
+
+ .secondSection{
+     margin-top: 1vw;
+     display: grid;
+     grid-template-columns: 25vw 35vw 20vw;
+     grid-template-rows: 15vw 20vw 15vw;
+     padding-top: 1vw;
+     border-top: 3px solid rgba(0, 0, 0, 0.555);
+     grid-template-areas:"top top right"
+    "left center right"
+    "left bottom right";
+    
+ }
+
+ 
+ .gridItem{
+     /* border: 1px solid black; */
+ }
+
+ .gridTop{
+    grid-area: top;
+    display:flex;
+
+ }
+    .gridTopSection1{
+        width: 40vw;
+        height: 100%;
+        display: flex;
+    }
+    .gridTopSection1Par{
+        padding:.5vw 1vw;
+        flex-grow: 1fr;
+        text-align: justify;
+        letter-spacing: -.1vw;
+        line-height: 1.5vw;
+        font-size: 1.5vw;
+        width: 80%;
+    }
+    .gridTopSection1Par::first-letter{
+        float: left;
+        font-size:7vw;
+        line-height: 6.5vw;
+        padding: .5vw .5vw 0vw 0vw;
+        border-radius: .1rem;
+        margin: 0 .5vw -1vw 0;
+    }
+    .gridTopVerticalContainer{
+        width: 20%;
+        height: 100%;
+
+    }
+    .gridTopSectionVerticalText{
+        display:inline-block;
+        padding:.5vw 1vw .5vw .8vw; 
+        text-align: justify;
+        letter-spacing: -.2vw;
+        line-height: 2.5vw;
+        font-size: 2.6vw;
+        width: 17.5vw;
+        transform: rotate(90deg) scale(1,1.1);
+        transform-origin: 3vw 2.8vw;
+        text-transform: uppercase;
+        font-family: 'Newsreader';
+        -webkit-mask-image: url(/images/terreno2.png);
+    }
+    .gridTopSection2{
+        width: 20vw;
+        height: 100%;
+
+    }
+    .gridTopSection2ImgContainer{
+        float:left;
+        width: 5vw;
+        height: 4vw;  
+    }
+    .gridTopSection2Img{ 
+        position:relative;
+        left:-1vw;
+        top: .5vw;
+        width: 6vw;
+        height: 4vw;   
+    }
+    .gridTopSection2Par{
+        text-align: justify;
+        margin-top: .5vw;
+        padding-right: .5vw;
+        letter-spacing: -.1vw;
+        line-height: 1.5vw;
+        font-size: 1.5vw;
+    }
+.gridLeft{ /*gridleft */
+    grid-area: left;
+}
+    .gridLeftImgContainer{
+        width: 10VW;
+        height: 16vw;
+        float: left;
+        padding: 1vw;
+    }
+    .gridLibroImg{
+        width: 100%;
+        height: 100%;
+    }
+    .gridLeftPar{
+        margin: 1vw;
+        text-align: justify;
+        letter-spacing: -.1vw;
+        line-height: 1.5vw;
+        font-size: 1.5vw;
+    }
+.gridBottom{
+    grid-area: bottom;
+    -webkit-mask-image: url(/images/terreno2.png);
+}
+    .gridBottomTopSec{
+        padding-top: 1.2vw;
+        height: 7.5vw;
+        font-size: 4vw;
+        letter-spacing: -.3vw;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .gridBottomUlContainer{
+        display:flex;
+        align-items: center;
+        height: 5vw;
+        font-size: 4vw;
+        overflow: hidden;
+    }
+        .gridBottomUlText{
+            display: inline-block;
+            width: 50%;
+            text-align: right;
+        }
+        .gridBottomUlLista{
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            list-style: none;
+            top: 0vw;
+            animation:bottomAnimation 12s infinite linear;
+            transition:0s;
+        }
+            .gridBottomListItem{
+                text-align: center;
+            }
+            @keyframes bottomAnimation{
+                0%{
+                    top:0vw;
+                }
+                12%{
+                    top:0vw;
+                }
+                24%{
+                    top:5vw;
+                }
+                36%{
+                    top:5vw;
+                }
+                48%{
+                    top:0vw;
+                }
+                60%{
+                    top:0vw;
+                }
+                72%{
+                    top:-5vw;
+                }
+                84%{
+                    top:-5vw;
+                }
+                96%{
+                    top:0vw;
+                }
+            }
+.gridRight{
+    grid-area: right;
+}
+    .socialMedia{/*seccion social media*/
+        width: 100%;
+        height: 100%;
+    }
+    .socialMediaTop{ /*parte superior, social media*/
+        width: 100%;
+        height: 15vw;
+        -webkit-mask-image: url(/images/terreno2.png);
+    }
+        .socialMediaTopH4{
+            margin-top:0vw;
+            text-align: center;
+            font-size: 3vw;
+            letter-spacing: -.4vw;
+            text-transform: uppercase;
+            transform: scaleY(1.8);
+            transform-origin: 0 0;
+        }
+        .socialMediaTopH3{
+            margin-top: 2.5vw;
+            text-align: center;
+            font-size: 4vw;
+            letter-spacing: -.2vw;
+            line-height: 3.5vw;
+            transform: scaleY(2);
+            transform-origin: 0 0;
+            font-family:'Times New Roman', Times, serif;
+            border-bottom: .1vw double black;
+            
+        }
+    .socialMediaMain{/*parte principal, social media*/  
+        height: 35vw;
+        display:flex;
+
+    }
+        .socialMediaMainContainer{
+            width: 16vw;
+            height: 35vw;
+            
+        }
+            .socialMediaOnContainer{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 5vw;
+                border-bottom: .2vw double black;
+                -webkit-mask-image: url(/images/terreno2.png);
+                line-height: 5.5vw;
+            }
+            .socialMediaOn{
+                width:6vw;
+                height: 5vw;
+                font-size: 4vw;
+                margin-bottom: 1vw;
+            }
+            .socialMediaOnImg{
+                width: 6vw;
+                height: 4vw;
+                position:relative;
+                top:.5vw;
+            }
+
+            .socialMediaAlsoTry{
+                -webkit-mask-image: url(/images/terreno2.png);
+                font-size: 4vw;
+                letter-spacing: -.4vw;
+                margin-top: 1vw;
+            }
+        .socialMediaMainVerticalContainer{
+            width: 4vw;
+            -webkit-mask-image: url(/images/terreno2.png);
+        }
+            .socialMediaMail{
+                font-size: 3.1vw;
+                transform: rotate(90deg) scale(1,1.1);
+                transform-origin: 1.2vw 2vw;
+            }
+        .socialMediaItem{
+            display:flex;
+            align-items: center;
+            text-align:center;
+            border-radius: 1rem;
+            height: 6vw;
+            width: 100%; 
+            font-size: 3.2vw;
+            letter-spacing: -.3vw;
+            text-decoration: none;
+            color: rgb(34, 24, 20);  
+            -webkit-mask-image: url(/images/terreno2.png);
+            transition: all 1s; 
+        }   
+        .socialMediaItem:hover{
+            background-color: rgba(0, 0, 0, 0.20);
+
+        }
+           
+    /* fin seccion social media */
+    /* fin zona derecha */
+.gridCenter{
+    grid-area: center; 
+}
+.gridCarImg{
+     border-radius: .3rem;
+     padding:1vw 2vw;
+     width: 100%;
+     height: 100%;
+     
+     object-fit: cover;
+}
